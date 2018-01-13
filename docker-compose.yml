@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+
+  app:
+    container_name: python_app_server
+    build: ./
+    ports:
+      - "80:5000"
+    volumes:
+      - "./app:/app"
+    restart: always

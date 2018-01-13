@@ -1,6 +1,11 @@
-FROM tiangolo/uwsgi-nginx-flask:python3.6
-MAINTAINER Vikash Kothary <kothary.vikash@gmail.com>
+FROM python:3.4
+
+MAINTAINER Vikash Kothary "kothary.vikash@gmail.com"
+
 COPY ./app /app
 WORKDIR /app
+
+RUN pip install -r requirements.txt
+
 ENTRYPOINT ["python"]
 CMD ["main.py"]
