@@ -17,8 +17,9 @@
 - [ ] Identify variables e.g. project name
 
 ### Speech Recognition
-
-- [ ] Take input
+> https://github.com/Uberi/speech_recognition/blob/master/examples/microphone_recognition.py
+- [ ] Connect docker and microphone
+- [x] Take input
 - [ ] Pre process e.g. remove filler words
 
 ### Speech Synthesis

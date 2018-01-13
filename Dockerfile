@@ -2,6 +2,8 @@
 
 FROM python:3.4
 
+RUN apt-get -qq update && apt-get install -y portaudio19-dev python-all-dev
+
 COPY ./app/requirements.txt /app/requirements.txt
 WORKDIR /app
 
